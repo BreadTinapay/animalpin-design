@@ -43,16 +43,13 @@ p {
 }
 
 .form {
-    margin-top: 10px;
-}
-
-.form img {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .form strong {
     font-size: larger;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .middle {

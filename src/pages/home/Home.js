@@ -12,6 +12,8 @@ function Home() {
 
     const image2 = "https://images.pexels.com/photos/3299905/pexels-photo-3299905.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
 
+    const image3 = "https://images.pexels.com/photos/5705624/pexels-photo-5705624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
+
     return (
         <div className="home">
             <div className="topCon">
@@ -46,7 +48,7 @@ function Home() {
 
             <div className="form">
                 <strong>Book</strong>
-                <CardCo image={image2} title="Pet Walking" desc="We make sure to walk your pets in safety and make sure they are completely fine" btn="Book" />
+                <CardCo image={image3} title="Pet Walking" desc="We make sure to walk your pets in safety and make sure they are completely fine" btn="Book" />
                 {/* <div className="container">
                     <img alt="" 
                     src="https://images.pexels.com/photos/3198001/pexels-photo-3198001.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
