@@ -1,0 +1,77 @@
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.home {
+    padding: 35px 25px 25px 25px;
+    margin-bottom: 4rem;
+}
+
+.topCon {
+    flex-direction: row;
+    color: grey;
+    font-size: small;
+    font-weight: 600;
+}
+
+.address {
+    flex-direction: row;
+}
+
+.address p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p {
+    line-height: 1;
+}
+
+.inner {
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.homeCard {
+    margin-top: 15px;
+}
+
+.img {
+    border-radius: 15px;
+}
+
+.form {
+    margin-top: 10px;
+}
+
+.form img {
+    margin-top: 10px;
+}
+
+.form strong {
+    font-size: larger;
+    margin-top: 20px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.middle2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+.container {
+    position: relative;
+}
