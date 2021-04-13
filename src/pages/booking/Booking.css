@@ -1,0 +1,14 @@
+.div {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking {
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
+
+.container {
+    margin-bottom: 15px;
+}

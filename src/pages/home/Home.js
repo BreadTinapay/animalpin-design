@@ -10,7 +10,7 @@ function Home() {
 
     const image = "https://images.pexels.com/photos/3198001/pexels-photo-3198001.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
 
-    const image2 = "https://images.pexels.com/photos/3299905/pexels-photo-3299905.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
+    // const image2 = "https://images.pexels.com/photos/3299905/pexels-photo-3299905.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
 
     const image3 = "https://images.pexels.com/photos/5705624/pexels-photo-5705624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
 
@@ -35,30 +35,22 @@ function Home() {
             </div>
 
             <div className="homeCard">
-                <CardCo image={image} title="Daycare" desc="We take care of your pets in times of need and provide them with top of the line technology" btn="Learn more" />
-                {/* <div className="container">
-                    <img alt="" 
-                    src="https://images.pexels.com/photos/3299905/pexels-photo-3299905.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    className="img" />
-                    <div className='middle'>
-                        <h3>Walk</h3>
-                    </div>
-                </div> */}
+                <CardCo 
+                image={image} 
+                title="Daycare" 
+                desc="We take care of your pets in times of need and provide them with top of the line technology" 
+                btn="Learn more" />
             </div>
-
             <div className="form">
                 <strong>Book</strong>
-                <CardCo image={image3} title="Pet Walking" desc="We make sure to walk your pets in safety and make sure they are completely fine" btn="Book" />
-                {/* <div className="container">
-                    <img alt="" 
-                    src="https://images.pexels.com/photos/3198001/pexels-photo-3198001.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    className="img" />
-                    <div className='middle2'>
-                        <h3>Daycare</h3>
-                    </div>
-                </div> */}
-
-                
+            </div>
+            
+            <div className="homeCard">
+                <CardCo 
+                image={image3} 
+                title="Pet Walking" 
+                desc="We make sure to walk your pets in safety and make sure they are completely fine" 
+                btn="Book" />
             </div>
         </div>
     )

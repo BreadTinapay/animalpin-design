@@ -36,20 +36,16 @@ p {
 
 .homeCard {
     margin-top: 15px;
+    align-items: center;
 }
 
 .img {
     border-radius: 15px;
 }
 
-.form {
-    margin-top: 15px;
-}
-
 .form strong {
     font-size: larger;
     margin-top: 20px;
-    margin-bottom: 10px;
 }
 
 .middle {
@@ -68,7 +64,27 @@ p {
     -ms-transform: translate(-50%, -50%);
 }
 
-
 .container {
     position: relative;
 }
+
+@media only screen and (min-width: 768px) {
+    .home {
+        padding: 35px 10rem 25px 10rem ;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .home {
+        padding: 35px 20rem 25px 20rem ;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .home {
+        padding: 35px 30rem 25px 30rem ;
+    }
+}
+
+
+

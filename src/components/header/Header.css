@@ -19,3 +19,26 @@ div {
     box-shadow: 5px 5px 8px 5px rgb(233, 233, 233);
     justify-content: space-between;
 }
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (min-width: 768px) {
+    .floater {
+        margin: 0 10rem 0 10rem ;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .floater {
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .floater {
+        margin: 0px 30rem 0px 30rem ;
+    }
+}

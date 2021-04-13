@@ -1,0 +1,8 @@
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.account {
+    padding: 2rem;
+}
