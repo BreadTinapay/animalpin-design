@@ -14,12 +14,14 @@ const useStyles = makeStyles({
   },
   actions: {
     display: 'flex',
-    alignItems: 'flex-end',
+    flexDirection: 'row-reverse',
+    justifyContent: 'flex-start',
   }
 });
 
-function CardCo({ image, title, desc, btn, walk, num, often }) {
+function CardCo({ image, title, desc, btn, walk, num, often, id }) {
   const classes = useStyles();
+
     return (
         <Card className={classes.root}>
         <CardActionArea>
@@ -52,6 +54,11 @@ function CardCo({ image, title, desc, btn, walk, num, often }) {
         </CardActionArea>
         <CardActions className={classes.actions}>
           <BookModal btn={btn} title={title} desc={desc} number={num} walk={walk}/>
+         { often ? (<BookModal btn="Remove" title='Are you sure?' desc='Once you do this you cannot undo this' rmvID={id}/>)
+         : (
+           <>
+           </>
+         ) }
         </CardActions>
       </Card>
     )

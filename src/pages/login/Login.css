@@ -1,0 +1,15 @@
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(255, 153, 0), rgb(226, 108, 153));
+    /* background-image: linear-gradient(rgb(255, 0, 0), rgb(255, 148, 61)); */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 2rem;
+}

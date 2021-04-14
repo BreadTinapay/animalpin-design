@@ -33,8 +33,8 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-function BookModal({btn, title, desc, number, walk}) {
-    const [{info},dispatch] = useStateValue();
+function BookModal({btn, title, desc, number, walk, rmvID }) {
+    const [{},dispatch] = useStateValue();
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
 
@@ -59,14 +59,17 @@ function BookModal({btn, title, desc, number, walk}) {
     const [zip, setZip] = useState("");
     const [date, setDate] = useState("");
     const [value, setValue] = useState('');
+    const [id, setId] = useState(0);
 
     const handleClick = () => {
         if(name === "" || num === "" || add === "" || city === "" || zip === "" || date === "" || value === ""){
             alert("Please fill up the forms")
         } else {
+            setId(id+1);
             dispatch({
                 type: "ADD_BOOKING",
                 client: {
+                    id: id,
                     name: name,
                     num: num,
                     add: add,
@@ -76,10 +79,18 @@ function BookModal({btn, title, desc, number, walk}) {
                     value: value,
                 }
             })
+            handleClose();
         }
-        console.log(info)
+    }
+
+    const handleRemove = () => {
+        dispatch({
+            type: "REMOVE_BOOKING",
+            id: rmvID,
+        })
         handleClose();
     }
+
     return (
         <div className="bookmodal">
             <div>
@@ -119,7 +130,7 @@ function BookModal({btn, title, desc, number, walk}) {
                         btn === "Book" ? (
                             <>
                                 <strong className="form">Booking Form</strong>
-                                <form className={classes.root} noValidate autoComplete="off">
+                                <form className={classes.root} noValidate autoComplete="on">
                                     <TextField className={classes.field} label="Name" variant="standard" value={name} onChange={(e) => setName(e.target.value)}/>
                                     <TextField className={classes.field} label="Mobile Number" variant="standard" value={num} onChange={(e) => setNum(e.target.value)}/>
                                     <TextField className={classes.field} label="Address" variant="standard" value={add} onChange={(e) => setAdd(e.target.value)}/>
@@ -152,6 +163,17 @@ function BookModal({btn, title, desc, number, walk}) {
                         ) : (
                             <>
                             <p>{number}</p>
+                            </>
+                        )
+                    }
+                    {
+                        btn === 'Remove' ? (
+                            <div className="rmv-btn">
+                            <button onClick={handleRemove} className='button'>Remove</button>
+                            <button onClick={handleClose} className='button'>Cancel</button>
+                            </div>
+                        ) : (
+                            <>
                             </>
                         )
                     }

@@ -4,5 +4,53 @@ div {
 }
 
 .account {
-    padding: 2rem;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem 0 2rem;
+    width: 100%;
+}
+
+.topHead {
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    height: 4rem;
+    align-items: center;
+    margin: 0;
+    color: #212529;
+}
+
+.top {
+    margin: 0;
+    color: #212529;
+}
+
+.account h4 {
+    margin-top: 20px;
+}
+
+.account p {
+    margin-bottom: 60px;
+}
+
+.spacing {
+    margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .account {
+        padding: 0 12rem 25px 12rem ;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .account {
+        padding: 0 22rem 25px 22rem ;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .account {
+        padding: 0 32rem 25px 32rem ;
+    }
 }

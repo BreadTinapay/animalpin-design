@@ -1,14 +1,49 @@
 .div {
     display: flex;
     flex-direction: column;
+    
 }
 
 .booking {
+    width: 100%;
     align-items: center;
     margin-bottom: 5rem;
     margin-top: 1rem;
 }
 
+.title {
+    margin-right: 15px;
+}
+
+.titleCon {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
 .container {
     margin-bottom: 15px;
+    align-items: center;    
+}
+
+@media only screen and (min-width: 768px) {
+    .booking {
+        padding: 0 10rem 25px 10rem ;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .booking {
+        padding: 0 20rem 25px 20rem ;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .booking {
+        padding: 0 30rem 25px 30rem ;
+    }
 }
