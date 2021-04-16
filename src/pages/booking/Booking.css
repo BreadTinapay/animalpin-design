@@ -25,6 +25,12 @@
     width: 100%;
 }
 
+.center {
+    justify-content: center;
+    height: 80vh;
+    color: grey;
+}
+
 .container {
     margin-bottom: 15px;
     align-items: center;    

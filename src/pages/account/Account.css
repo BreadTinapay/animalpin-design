@@ -7,7 +7,7 @@ div {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem 2rem 5rem 2rem;
     width: 100%;
 }
 
@@ -27,11 +27,9 @@ div {
 
 .account h4 {
     margin-top: 20px;
+    margin-bottom: 3rem;
 }
 
-.account p {
-    margin-bottom: 60px;
-}
 
 .spacing {
     margin-bottom: 5rem;

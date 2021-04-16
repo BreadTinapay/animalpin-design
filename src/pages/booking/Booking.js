@@ -6,13 +6,15 @@ import { useHistory } from 'react-router-dom'
 import './Booking.css'
 
 function Booking() {
+
     const [{info}] = useStateValue();
     const image = "https://images.pexels.com/photos/5705624/pexels-photo-5705624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
     const history = useHistory();
+
     const handleClick = (e) => {
         e.preventDefault();
         history.push("/");
-    }
+    }   
 
     return (
         <div className="booking">
@@ -22,11 +24,10 @@ function Booking() {
             </div>
             {info.map((client) => {
                 return (
-                    <div className="container" key={client.id}>
-                    <CardCo title={client.name} desc={client.date} btn={"View"} image={image} walk={"Pet Walking"} num={client.num} often={client.value} id={client.id}/>
+                    <div className={"container"} key={client.id}>
+                            <CardCo title={client.name} desc={client.date} btn={"View"} image={image} walk={"Pet Walking"} num={client.num} often={client.value} id={client.id}/>
                     </div>
-                )
-            })}
+                )})}
         </div>
     )
 }

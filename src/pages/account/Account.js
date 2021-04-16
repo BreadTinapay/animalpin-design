@@ -30,9 +30,8 @@ function Account() {
                 <h4 className="top">Profile</h4>
             </div>
             <div className="account">
-            <Avatar alt='account-picture' style={{ height: '150px', width: '150px', fontSize: '50px' }} src={user.photoURL}>B</Avatar>
-            <h4>{user.displayName}</h4>
-            <p>{user.email}</p>
+            <Avatar alt='account-picture' style={{ height: '150px', width: '150px', fontSize: '50px' }} src={user.photoURL}>{user.email.charAt(0).toUpperCase()}</Avatar>
+            <h4>{user.email}</h4>
             <Button variant="contained" color='primary' style={{ width: '100%', height: '3rem' }} onClick={handleLogout}>Logout</Button>
             <div className='spacing'><br/></div>
         </div>

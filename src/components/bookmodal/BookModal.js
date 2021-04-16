@@ -169,8 +169,8 @@ function BookModal({btn, title, desc, number, walk, rmvID }) {
                     {
                         btn === 'Remove' ? (
                             <div className="rmv-btn">
-                            <button onClick={handleRemove} className='button'>Remove</button>
-                            <button onClick={handleClose} className='button'>Cancel</button>
+                            <button onClick={handleRemove} className='button margin'>Remove</button>
+                            <button onClick={handleClose} className='button margin'>Cancel</button>
                             </div>
                         ) : (
                             <>
