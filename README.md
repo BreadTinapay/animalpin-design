@@ -6,7 +6,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
+
+then after installing the necessary dependencies, run:
+
+### `npx cap open android`
+
+to open the app your app in android studio or run:
+
 ### `npm start`
+
+to run on localhost:3000 in your local browser
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
